@@ -1,0 +1,14 @@
+body {
+  font-size: 12px;
+}
+
+text {
+  fill: orange;
+
+  /*font-size: 12px;*/
+}
+
+circle {
+  /*fill: blue;*/
+  /*opacity: 0;*/
+}
