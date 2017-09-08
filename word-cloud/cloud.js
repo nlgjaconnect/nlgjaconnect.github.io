@@ -54,8 +54,8 @@ function countFrequentlyUsedWords(input, n) {
             .range([0.6,1])
 
 
-  var width = 1000,
-      height = 1000
+  var width = 750,
+      height = 750
 
   var svg = d3.select('svg')
               .attr('width', width)
