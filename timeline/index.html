@@ -1,192 +1,139 @@
 <!DOCTYPE html>
-<html>
-<meta charset="UTF-8">
-<style>
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
-
-body {
-  font-family: "Open Sans", sans-serif;
-}
-
-.container ul {
-  margin: 0;
-  margin-top: 20px;
-  list-style: none;
-  position: relative;
-  padding: 1px 100px;
-  color: #484848;
-  font-size: 13px;
-}
-.container ul:before {
-  content: "";
-  width: 1px;
-  height: 100%;
-  position: absolute;
-  border-left: 2px dashed #484848;
-}
-.container ul li {
-  position: relative;
-  margin-left: 30px;
-  background-color: rgba(255, 255, 255, 0.2);
-  padding: 14px;
-  border-radius: 6px;
-  width: 250px;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.08);
-}
-.container ul li:not(:first-child) {
-  margin-top: 60px;
-}
-.container ul li > span {
-  width: 2px;
-  height: 100%;
-  background: #484848;
-  left: -30px;
-  top: 0;
-  position: absolute;
-}
-.container ul li > span:before, .container ul li > span:after {
-  content: "";
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  border: 2px solid #484848;
-  position: absolute;
-  background: #484848;
-  left: -5px;
-  top: 0;
-}
-.container ul li span:after {
-  top: 100%;
-}
-.container ul li > div {
-  margin-left: 10px;
-}
-.container div .title, .container div .type {
-  font-weight: 600;
-  font-size: 12px;
-}
-.container div .info {
-  font-weight: 300;
-}
-.container div > div {
-  margin-top: 5px;
-}
-.container span.number {
-  height: 100%;
-}
-.container span.number span {
-  position: absolute;
-  font-size: 10px;
-  left: -35px;
-  font-weight: bold;
-}
-.container span.number span:first-child {
-  top: 0;
-}
-.container span.number span:last-child {
-  top: 100%;
-}
-
-</style>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<!-- <link rel="stylesheet" href="style.css"> -->
+<html >
+  <meta charset="UTF-8">
+      <link rel="stylesheet" href="style.css">
 
 <body>
-  <div class="container">
-    <ul>
-      <li><span></span>
-        <div>
-          <div class="title">Supreme Court Case Plyler v. Doe</div>
-          <div class="info">Details</div>
-          <!-- <div class="type"></div> -->
-        </div> <span class="number"><span>1982</span> <span>END</span></span>
-      </li>
-      <li><span></span>
-        <div>
-          <div class="title">The Illegal Immigration Reform and Immigration Responsibility Act (IIRAIRA)</div>
-          <div class="info">Details</div>
-          <!-- <div class="type"></div> -->
-        </div> <span class="number"><span>1996</span> <span>END</span></span>
-      </li>
-      <li><span></span>
-        <div>
-          <div class="title">S.1291</div>
-          <div class="info">Details</div>
-          <!-- <div class="type"></div> -->
-        </div> <span class="number"><span>2001</span> <span>END</span></span>
-      </li>
-      <li><span></span>
-        <div>
-          <div class="title">S. 1525</div>
-          <div class="info">Details</div>
-          <!-- <div class="type"></div> -->
-        </div> <span class="number"><span>2003</span> <span>END</span></span>
-      </li>
-      <li><span></span>
-        <div>
-          <div class="title">S. 2075</div>
-          <div class="info">Details</div>
-          <!-- <div class="type"></div> -->
-        </div> <span class="number"><span>2005</span> <span>END</span></span>
-      </li>
-      <li><span></span>
-        <div>
-          <div class="title">S. 774</div>
-          <div class="info">Details</div>
-          <!-- <div class="type"></div> -->
-        </div> <span class="number"><span>2007</span> <span>END</span></span>
-      </li>
-      <li><span></span>
-        <div>
-          <div class="title">S. 729</div>
-          <div class="info">Details</div>
-          <!-- <div class="type"></div> -->
-        </div> <span class="number"><span>2009</span> <span>END</span></span>
-      </li>
-      <li><span></span>
-        <div>
-          <div class="title">S. 3992</div>
-          <div class="info">Details</div>
-          <!-- <div class="type"></div> -->
-        </div> <span class="number"><span>2010</span> <span>END</span></span>
-      </li>
-      <li><span></span>
-        <div>
-          <div class="title">S. 952</div>
-          <div class="info">Details</div>
-          <!-- <div class="type"></div> -->
-        </div> <span class="number"><span>2011</span> <span>END</span></span>
-      </li>
-      <li><span></span>
-        <div>
-          <div class="title">Deferred Action for Childhood Arrivals</div>
-          <div class="info">Details</div>
-          <!-- <div class="type"></div> -->
-        </div> <span class="number"><span>2012</span> <span>END</span></span>
-      </li>
-      <li><span></span>
-        <div>
-          <div class="title">S. 1615</div>
-          <div class="info">Details</div>
-          <!-- <div class="type"></div> -->
-        </div> <span class="number"><span>2017</span> <span>END</span></span>
-      </li>
-      <li><span></span>
-        <div>
-          <div class="title">DACA terminated</div>
-          <div class="info">Details</div>
-          <!-- <div class="type"></div> -->
-        </div> <span class="number"><span>2017</span> <span>END</span></span>
-      </li>
-      <li><span></span>
-        <div>
-          <div class="title">Legislation</div>
-          <div class="info">Details</div>
-          <!-- <div class="type"></div> -->
-        </div> <span class="number"><span>1993</span> <span>END</span></span>
-      </li>
-    </ul>
+<ul class="timeline">
+
+  <li>
+    <div class="direction-r">
+      <div class="flag-wrapper">
+        <span class="hexa"></span>
+        <span class="flag">Lorem ipsum.</span>
+        <span class="time-wrapper"><span class="time">Feb 2015</span></span>
+      </div>
+      <div class="desc">Lorem ipsum Nisi labore aute do aute culpa magna nulla voluptate exercitation deserunt proident.</div>
+    </div>
+  </li>
+
+
+  <li>
+    <div class="direction-l">
+      <div class="flag-wrapper">
+        <span class="hexa"></span>
+        <span class="flag">Lorem ipsum Anim.</span>
+        <span class="time-wrapper"><span class="time">Dec 2014</span></span>
+      </div>
+      <div class="desc">Lorem ipsum In ut sit in dolor nisi ex magna eu anim anim tempor dolore aliquip enim cupidatat laborum dolore.</div>
+    </div>
+  </li>
+
+
+  <li>
+    <div class="direction-r">
+      <div class="flag-wrapper">
+        <span class="hexa"></span>
+        <span class="flag">Lorem Occaecat.</span>
+        <span class="time-wrapper"><span class="time">July 2014</span></span>
+      </div>
+      <div class="desc">Lorem ipsum Minim labore Ut cupidatat quis qui deserunt proident fugiat pariatur cillum cupidatat reprehenderit sit id dolor consectetur ut.</div>
+    </div>
+  </li>
+
+
+<li>
+  <div class="direction-l">
+    <div class="flag-wrapper">
+      <span class="hexa"></span>
+      <span class="flag">Lorem ipsum Anim.</span>
+      <span class="time-wrapper"><span class="time">Dec 2014</span></span>
+    </div>
+    <div class="desc">Lorem ipsum In ut sit in dolor nisi ex magna eu anim anim tempor dolore aliquip enim cupidatat laborum dolore.</div>
   </div>
+</li>
+
+
+<li>
+  <div class="direction-r">
+    <div class="flag-wrapper">
+      <span class="hexa"></span>
+      <span class="flag">Lorem Occaecat.</span>
+      <span class="time-wrapper"><span class="time">July 2014</span></span>
+    </div>
+    <div class="desc">Lorem ipsum Minim labore Ut cupidatat quis qui deserunt proident fugiat pariatur cillum cupidatat reprehenderit sit id dolor consectetur ut.</div>
+  </div>
+</li>
+
+<li>
+  <div class="direction-l">
+    <div class="flag-wrapper">
+      <span class="hexa"></span>
+      <span class="flag">Lorem ipsum Anim.</span>
+      <span class="time-wrapper"><span class="time">Dec 2014</span></span>
+    </div>
+    <div class="desc">Lorem ipsum In ut sit in dolor nisi ex magna eu anim anim tempor dolore aliquip enim cupidatat laborum dolore.</div>
+  </div>
+</li>
+
+
+<li>
+  <div class="direction-r">
+    <div class="flag-wrapper">
+      <span class="hexa"></span>
+      <span class="flag">Lorem Occaecat.</span>
+      <span class="time-wrapper"><span class="time">July 2014</span></span>
+    </div>
+    <div class="desc">Lorem ipsum Minim labore Ut cupidatat quis qui deserunt proident fugiat pariatur cillum cupidatat reprehenderit sit id dolor consectetur ut.</div>
+  </div>
+</li>
+
+<li>
+  <div class="direction-l">
+    <div class="flag-wrapper">
+      <span class="hexa"></span>
+      <span class="flag">Lorem ipsum Anim.</span>
+      <span class="time-wrapper"><span class="time">Dec 2014</span></span>
+    </div>
+    <div class="desc">Lorem ipsum In ut sit in dolor nisi ex magna eu anim anim tempor dolore aliquip enim cupidatat laborum dolore.</div>
+  </div>
+</li>
+
+
+<li>
+  <div class="direction-r">
+    <div class="flag-wrapper">
+      <span class="hexa"></span>
+      <span class="flag">Lorem Occaecat.</span>
+      <span class="time-wrapper"><span class="time">July 2014</span></span>
+    </div>
+    <div class="desc">Lorem ipsum Minim labore Ut cupidatat quis qui deserunt proident fugiat pariatur cillum cupidatat reprehenderit sit id dolor consectetur ut.</div>
+  </div>
+</li>
+
+<li>
+  <div class="direction-l">
+    <div class="flag-wrapper">
+      <span class="hexa"></span>
+      <span class="flag">Lorem ipsum Anim.</span>
+      <span class="time-wrapper"><span class="time">Dec 2014</span></span>
+    </div>
+    <div class="desc">Lorem ipsum In ut sit in dolor nisi ex magna eu anim anim tempor dolore aliquip enim cupidatat laborum dolore.</div>
+  </div>
+</li>
+
+
+<li>
+  <div class="direction-r">
+    <div class="flag-wrapper">
+      <span class="hexa"></span>
+      <span class="flag">Lorem Occaecat.</span>
+      <span class="time-wrapper"><span class="time">July 2014</span></span>
+    </div>
+    <div class="desc">Lorem ipsum Minim labore Ut cupidatat quis qui deserunt proident fugiat pariatur cillum cupidatat reprehenderit sit id dolor consectetur ut.</div>
+  </div>
+</li>
+</ul>
+
 </body>
 </html>
