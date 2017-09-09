@@ -1,144 +1,189 @@
-<!DOCTYPE html>
-<script src="https://use.fontawesome.com/d8f404cc0c.js" defer></script>
-<style>
-  body {
-    font-family: sans-serif;
-    color: #666;
-  }
-  table {
-    border-collapse: collapse;
-  }
-  td {
-    text-align: center;
-    height: 40px;
-  }
-
-  tr td:first-child {
-    width: 15%;
-  }
-
-  tr td:nth-child(2) {
-    width: 10%;
-  }
-
-  tr td:last-child {
-    text-align: left;
-  }
-
-  th, td {
-    border-bottom: 1px solid #1a1a1a;
-    padding: 10px;
-  }
-
-
-  th {
-    height: 60px;
-  }
-
-  .yellow {
-    background-color: rgba(255, 235, 59, .50);
-  }
-
-  .red {
-    background-color: rgba(255, 0, 0, 0.3);
-  }
-
-  .green {
-    background-color: rgba(0, 128, 0, 0.3);
-  }
-
-
-  .access-yellow:hover {
-    background-color: rgba(255, 235, 59, .50);
-  }
-
-  .access-red:hover {
-    background-color: rgba(255, 0, 0, 0.3);
-  }
-
-  .access-green:hover {
-    background-color: rgba(0, 128, 0, 0.3);
-  }
-</style>
-
-<table class="access-table ">
-  <thead>
-    <tr class="">
-      <th>Venue Name</th>
-      <th>Rating</th>
-      <th>Notes</th>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1404.47">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; line-height: 14.0px; font: 12.0px Helvetica; color: #666666; -webkit-text-stroke: #666666}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; line-height: 14.0px; font: 12.0px Helvetica; color: #0000ee; -webkit-text-stroke: #0000ee}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; line-height: 14.0px; font: 12.0px Helvetica; color: #666666; -webkit-text-stroke: #666666; min-height: 14.0px}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Helvetica; color: #666666; -webkit-text-stroke: #666666}
+    p.p5 {margin: 0.0px 0.0px 12.0px 0.0px; line-height: 14.0px; font: 12.0px Helvetica; color: #666666; -webkit-text-stroke: #666666; min-height: 14.0px}
+    p.p6 {margin: 0.0px 0.0px 12.0px 0.0px; line-height: 14.0px; font: 12.0px Helvetica; color: #666666; -webkit-text-stroke: #666666}
+    span.s1 {font-kerning: none}
+    span.s2 {text-decoration: underline ; font-kerning: none}
+    table.t1 {border-collapse: collapse}
+    td.td1 {width: 95.0px; border-style: solid; border-width: 0.0px 0.0px 1.0px 0.0px; border-color: #666666 #666666 #1a1a1a #666666; padding: 10.0px 10.0px 10.0px 10.0px}
+    td.td2 {width: 56.0px; border-style: solid; border-width: 0.0px 0.0px 1.0px 0.0px; border-color: #666666 #666666 #1a1a1a #666666; padding: 10.0px 10.0px 10.0px 10.0px}
+    td.td3 {width: 558.0px; border-style: solid; border-width: 0.0px 0.0px 1.0px 0.0px; border-color: #666666 #666666 #1a1a1a #666666; padding: 10.0px 10.0px 10.0px 10.0px}
+    td.td4 {width: 56.0px; background-color: #ffeb3b; background-color: rgba(255, 235, 59, 0.5); border-style: solid; border-width: 0.0px 0.0px 1.0px 0.0px; border-color: #666666 #666666 #1a1a1a #666666; padding: 10.0px 10.0px 10.0px 10.0px}
+    td.td5 {width: 56.0px; background-color: #ff0000; background-color: rgba(255, 0, 0, 0.3); border-style: solid; border-width: 0.0px 0.0px 1.0px 0.0px; border-color: #666666 #666666 #1a1a1a #666666; padding: 10.0px 10.0px 10.0px 10.0px}
+    td.td6 {width: 56.0px; background-color: #008000; background-color: rgba(0, 128, 0, 0.3); border-style: solid; border-width: 0.0px 0.0px 1.0px 0.0px; border-color: #666666 #666666 #1a1a1a #666666; padding: 10.0px 10.0px 10.0px 10.0px}
+  </style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1"><b>Venue Name</b></span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p1"><span class="s1"><b>Rating</b></span></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p1"><span class="s1"><b>Notes</b></span></p>
+      </td>
     </tr>
-  </thead>
-  <tr class="access-yellow">
-    <td><a href='http://www.bootandsaddlephilly.com/'>Boot & Saddle</a></td>
-    <td class='yellow'><i class="fa fa-star-half-o" aria-hidden="true"></i></i></td>
-    <td>Standing room only & no disability seating; Accommodations on case-by-case basis (mostly unspecified); GOV-funded personal care attendant can receive complimentary ticket; temporary ADA ramp can be installed upon request</td>
-  </tr>
-  <tr class="access-yellow">
-    <td><a href='http://www.electricfactory.info/'>Electric Factory</a></td>
-    <td class='yellow'><i class="fa fa-star-half-o" aria-hidden="true"></i></i></td>
-    <td>Standing room only; entrance ramp directly in front of box office; disability accessible bathrooms on first floor; elevated viewing area; easily accessible concessions; accommodations available upon request (mostly unspecified); GOV-funded personal care attendant can receive complimentary ticket</td>
-  </tr>
-  <tr class="access-red">
-    <td><a href='http://www.johnnybrendas.com/'>Johnny Brenda's</a></td>
-    <td class='red'><i class="fa fa-star-o" aria-hidden="true"></i></td>
-    <td>Flight of stairs to get to the floor with shows; bathrooms on both floors</td>
-  </tr>
-  <tr class="access-yellow">
-    <td><a href='http://www.kungfunecktie.com/'>Kung Fu Necktie</a></td>
-    <td class='yellow'><i class="fa fa-star-half-o" aria-hidden="true"></i></i></td>
-    <td>Downstairs shows on ground level; 1 curb-sized step to enter; Bathrooms on first floor</td>
-  </tr>
-  <tr class="access-green">
-    <td><a href='http://www.livingartsdance.com/'>Living Arts</a></td>
-    <td class='green'><i class="fa fa-star" aria-hidden="true"></i></td>
-    <td>ADA accessible bathroom; seating available upon request; signers (ASL) available upon request; they generally receive at least one accommodation request per show; mostly general admission; personal care attendants generally buy separate tickets, but are able to receive complimentary tickets; listening devices unavailable</td>
-  </tr>
-  <tr class="access-red">
-    <td><a href='http://www.milkboyphilly.com/'>Milkboy</a></td>
-    <td class='red'><i class="fa fa-star-o" aria-hidden="true"></i></td>
-    <td>First floor is accessible, second floor isn't; Accommodations available upon request (unspecified)</td>
-  </tr>
-  <tr class="access-yellow">
-    <td><a href='http://www.philamoca.org/'>PhilaMOCA</a></td>
-    <td class='yellow'><i class="fa fa-star-half-o" aria-hidden="true"></i></i></td>
-    <td>Events on main level; 1 curb-sized step to enter; standing room only; large single stall bathroom on main level</td>
-  </tr>
-  <tr class="access-yellow">
-    <td><a href='http://www.thefillmorephilly.com/'>The Fillmore</a></td>
-    <td class='yellow'><i class="fa fa-star-half-o" aria-hidden="true"></i></i></td>
-    <td>ADA Seating; accommodations available upon request (unspecified)</td>
-  </tr>
-  <tr class="access-green">
-    <td><a href='https://www.manncenter.org/'>The Mann</a></td>
-    <td class='green'><i class="fa fa-star" aria-hidden="true"></i></td>
-    <td>Wheelchair accessible seating; ADA ticketing purchased through phone # ext; wheelchair and other assistance available upon request; GOV-funded personal care attendant can receive complimentary ticket; parking for people w/ disability licenses/hangtags near main entrance and entrance on top of the hill; assisted listening deviced available upon request</td>
-  </tr>
-  <tr class="access-yellow">
-    <td><a href='http://www.thetroc.com/'>Trocadero Theatre</a></td>
-    <td class='yellow'><i class="fa fa-star-half-o" aria-hidden="true"></i></i></td>
-    <td>Bench seating on balcony level; Accommodations available upon request (unspecified)</td>
-  </tr>
-  <tr class="access-yellow">
-    <td><a href='http://www.undergroundarts.org/'>Underground Arts</a></td>
-    <td class='yellow'><i class="fa fa-star-half-o" aria-hidden="true"></i></i></td>
-    <td>Lift system and elevator lead straight to venue; disability accessible bathrooms; access to bar and merch</td>
-  </tr>
-  <tr class="access-yellow">
-    <td><a href='http://www.utphilly.com/'>Union Transfer</a></td>
-    <td class='yellow'><i class="fa fa-star-half-o" aria-hidden="true"></i></i></td>
-    <td>Main venue, lobby floors and bathrooms all fully accessible; no designated disabled seating, but accommodation available upon request; GOV-funded personal care attendant can receive complimentary ticket; limited seating in showroom balcony</td>
-  </tr>
-  <tr class="access-yellow">
-    <td><a href='http://www.worldcafelive.com/'>World Cafe</a></td>
-    <td class='yellow'><i class="fa fa-star-half-o" aria-hidden="true"></i></i></td>
-    <td>ADA accessible by central elevator; wheelchair accommodations available upon request; hired personal care attendant can receive complimentary ticket</td>
-  </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2"><a href="http://www.bootandsaddlephilly.com/">Boot &amp; Saddle</a></span></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p3"><span class="s1"></span><br></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p4"><span class="s1">Standing room only and no disability seating; accommodations on case-by-case basis (mostly unspecified); government-funded personal care attendant can receive complimentary ticket; temporary ADA ramp can be installed upon request</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2"><a href="http://www.electricfactory.info/">Electric Factory</a></span></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p3"><span class="s1"></span><br></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p4"><span class="s1">Standing room only; entrance ramp directly in front of box office; accessible bathrooms on first floor; elevated viewing area; easily accessible concessions; accommodations available upon request (mostly unspecified); government-funded personal care attendant can receive complimentary ticket</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2"><a href="http://www.johnnybrendas.com/">Johnny Brenda's</a></span></p>
+      </td>
+      <td valign="middle" class="td5">
+        <p class="p3"><span class="s1"></span><br></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p4"><span class="s1">Flight of stairs to get to the floor with shows; bathrooms on both floors</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2"><a href="http://www.kungfunecktie.com/">Kung Fu Necktie</a></span></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p3"><span class="s1"></span><br></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p4"><span class="s1">Downstairs shows on ground level; one curb-sized step to enter; bathrooms on first floor</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2"><a href="http://www.livingartsdance.com/">Living Arts</a></span></p>
+      </td>
+      <td valign="middle" class="td6">
+        <p class="p3"><span class="s1"></span><br></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p4"><span class="s1">Accessible bathroom; seating available upon request; American Sign Language interpreters available upon request; venue receives at least one accommodation request per show; mostly general admission; personal care attendants can receive complimentary ticket; listening devices unavailable</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2"><a href="http://www.milkboyphilly.com/">Milkboy</a></span></p>
+      </td>
+      <td valign="middle" class="td5">
+        <p class="p3"><span class="s1"></span><br></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p4"><span class="s1">First floor is accessible, second floor isn't; accommodations available upon request (unspecified)</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2"><a href="http://www.philamoca.org/">PhilaMOCA</a></span></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p3"><span class="s1"></span><br></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p4"><span class="s1">Events on main level; one curb-sized step to enter; standing room only; large single-stall bathroom on main level</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2"><a href="http://www.thefillmorephilly.com/">The Fillmore</a></span></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p3"><span class="s1"></span><br></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p4"><span class="s1">ADA seating; accommodations available upon request (unspecified)</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2"><a href="https://www.manncenter.org/">The Mann</a></span></p>
+      </td>
+      <td valign="middle" class="td6">
+        <p class="p3"><span class="s1"></span><br></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p4"><span class="s1">Wheelchair-accessible seating; ADA ticketing purchased by calling; wheelchair and other assistance available upon request; government-funded personal care attendant can receive complimentary ticket; parking for people with disability licenses and hangtags near main entrance and entrance on top of the hill; listening devices available upon request</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2"><a href="http://www.thetroc.com/">Trocadero Theatre</a></span></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p3"><span class="s1"></span><br></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p4"><span class="s1">Bench seating on balcony level; accommodations available upon request (unspecified)</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2"><a href="http://www.undergroundarts.org/">Underground Arts</a></span></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p3"><span class="s1"></span><br></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p4"><span class="s1">Lift system and elevator lead straight to venue; accessible bathrooms; access to bar and merchandise</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2"><a href="http://www.utphilly.com/">Union Transfer</a></span></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p3"><span class="s1"></span><br></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p4"><span class="s1">Main venue, lobby floors and bathrooms all fully accessible; no designated seating for people with disabilities but accommodation available upon request; government-funded personal care attendant can receive complimentary ticket; limited seating in showroom balcony</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2"><a href="http://www.worldcafelive.com/">World Cafe</a></span></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p3"><span class="s1"></span><br></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p4"><span class="s1">ADA accessible by central elevator; wheelchair accommodations available upon request; personal care attendant can receive complimentary ticket</span></p>
+      </td>
+    </tr>
+  </tbody>
 </table>
-<div>
-<p><em>
-Venues marked in red are mostly/completely inaccessible. Those in yellow are venues with limited accessibility. Those in green are mostly accessible and have specific accommodation info available.
-</em></p>
-</div>
-  </div>
-</div>
+<p class="p5"><span class="s1"><i></i></span><br></p>
+<p class="p6"><span class="s1"><i>Venues marked in red are mostly/completely inaccessible. Those in yellow are venues with limited accessibility. Those in green are mostly accessible and have specific accommodation information available.<span class="Apple-converted-space"> </span></i></span></p>
+</body>
+</html>
