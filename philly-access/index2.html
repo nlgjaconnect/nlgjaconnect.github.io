@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<style>
+  .access-background {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 2px;
+    display: inline-block;
+    font-size: 17px;
+    color: white;
+    box-shadow: 4px 6px 20px -6px rgba(0,0,0,0.75)
+  }
+</style>
+
+<div id='table-holder'>
+  <div id='access-table'></div>
+  <div id='access-stats'></div>
+</div>
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script>
+
+var height = 180,
+    font = 14,
+    color = d3.scaleOrdinal(d3.schemeCategory10),
+    r = 20,
+    diameter = r * 2
+
+
+    d3.csv('access.csv', function(error, data){
+      if (error) throw error
+
+      var div = d3.select('#access-table')
+        .datum(data)
+
+      var node = div.selectAll('_')
+            .data(data)
+            .enter()
+            .append('div')
+            .style('background-color', (d) => `${color(d.indicator)}`)
+            .attr('class', 'access-background')
+            .on('mouseover', hover)
+            .on('mouseout', leave)
+
+      var text = node
+            .text((d) => d.name)
+            .attr('transform', `translate(${diameter * .8 }, ${5})`)
+
+      var container = d3.select('#access-stats')
+            .attr('max-widthpx', +d3.select('svg').attr('width'))
+    })
+
+    function hover(d){
+        d3.select(this).select('circle').transition().duration(100).attr('transform', 'scale(1.2)')
+        updateDiv(d)
+    }
+
+    function leave(d){
+      d3.select(this).select('circle').transition().duration(400).attr('transform', 'scale(1)')
+    }
+
+    function updateDiv(d) {
+      var html = ``
+      html += `<h2>${d.indicator}</h2>`
+      html += `<p>${d.notes}</p>`
+
+      d3.select('#access-stats')
+        .html(html)
+    }
+
+</script>
